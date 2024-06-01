@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/mainInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/ipTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP Address"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/connectedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Connected To Internet" />
+
+        <TextView
+            android:id="@+id/uploadTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Speed" />
+
+        <TextView
+            android:id="@+id/downloadTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Download Speed" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Connect"
+        app:layout_constraintBottom_toBottomOf="@id/mainInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/mainInfo" />
+
+    <!-- Expandable Layout -->
+    <LinearLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainInfo">
+
+        <TextView
+            android:id="@+id/cpuUsageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPU Frequency" />
+
+        <TextView
+            android:id="@+id/memoryUsageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memory Usage" />
+
+        <TextView
+            android:id="@+id/packetSentTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Packet Sent" />
+
+        <TextView
+            android:id="@+id/packetReceiveTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Packet Receive" />
+
+        <TextView
+            android:id="@+id/errorInTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Error In" />
+
+        <TextView
+            android:id="@+id/errorOutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Error Out" />
+
+        <TextView
+            android:id="@+id/dropInTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop In" />
+
+        <TextView
+            android:id="@+id/dropOutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop Out" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

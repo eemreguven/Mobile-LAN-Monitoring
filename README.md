@@ -45,13 +45,13 @@ To run the project, you need to have the following installed:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-repository/mobile-lan-monitoring.git
+    git clone https://github.com/eemreguven/Mobile-LAN-Monitoring.git
     ```
 
 2. Navigate to the server directory:
 
     ```bash
-    cd mobile-lan-monitoring/server
+    cd Mobile-LAN-Monitoring/server
     ```
 
 3. Install the required Python packages:
@@ -71,7 +71,7 @@ To run the project, you need to have the following installed:
 1. Navigate to the LAN client directory:
 
     ```bash
-    cd mobile-lan-monitoring/lan_client
+    cd Mobile-LAN-Monitoring/lan_client
     ```
 
 2. Install the required Python packages:
@@ -89,7 +89,7 @@ To run the project, you need to have the following installed:
 ### Mobile Client Setup
 
 1. Open Android Studio.
-2. Import the mobile client project located in `mobile-lan-monitoring/mobile_client`.
+2. Import the mobile client project located in `Mobile-LAN-Monitoring/mobile_client/MobileLanMonitor`.
 3. Build and run the project on an Android device or emulator.
 
 ## Running the Project
